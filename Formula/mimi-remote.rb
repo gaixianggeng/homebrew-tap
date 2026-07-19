@@ -5,20 +5,20 @@
 class MimiRemote < Formula
   desc "iPad companion agent for user-owned Mac developer environments"
   homepage "https://github.com/gaixianggeng/mimi-remote"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.2/mimi-remote_0.1.2_darwin_amd64.tar.gz"
-      sha256 "4b44db21a04ce3fdce1354622946bd8ae4f13dea10135a4bcc6d596dd7ba0650"
+      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.3/mimi-remote_0.1.3_darwin_amd64.tar.gz"
+      sha256 "543cd1cceee2b6c5ac9b718a1aee3384315c38e8600056dde2d7ae612465ca0f"
 
       define_method(:install) do
         bin.install "agentd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.2/mimi-remote_0.1.2_darwin_arm64.tar.gz"
-      sha256 "8fadbe347349b7d0519cc58101e4f0ff22c6a448b76f7f1f89d6a6d32a4772af"
+      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.3/mimi-remote_0.1.3_darwin_arm64.tar.gz"
+      sha256 "6e2b488294e220eae2ced50e1ca504f968764d65e0fc2cde6ad73b97a69bdc05"
 
       define_method(:install) do
         bin.install "agentd"
@@ -28,15 +28,15 @@ class MimiRemote < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.2/mimi-remote_0.1.2_linux_amd64.tar.gz"
-      sha256 "9bc2f67a68b3175a21b27d0eff0f6c70ff63622f419db5f9d1bf94a6818c0d52"
+      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.3/mimi-remote_0.1.3_linux_amd64.tar.gz"
+      sha256 "5ccaf3af5e95656f771403bbbba9513b439ce0103b4e84614c2cb1dc58f1c2ef"
       define_method(:install) do
         bin.install "agentd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.2/mimi-remote_0.1.2_linux_arm64.tar.gz"
-      sha256 "bbabb444086755f13acc7a46988acb5a8062475c93fbf31f25cef22ecba3dd5e"
+      url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.1.3/mimi-remote_0.1.3_linux_arm64.tar.gz"
+      sha256 "c688dbe5e65d08fdc4141e10d229a4ee3b98ea0ca30dfce63e14ab48fab36046"
       define_method(:install) do
         bin.install "agentd"
       end
