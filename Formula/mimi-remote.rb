@@ -10,7 +10,7 @@ class MimiRemote < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.2.0/mimi-remote_0.2.0_darwin_amd64.tar.gz"
-      sha256 "c26ef1075f38a7caa7f5dd4aaf2e1ca150cd832de9dac40367f306a325284429"
+      sha256 "f3eedaf357f9f635dd2b21cca78f18fb9291dc6511cc68ab7060b755abbc19bc"
 
       define_method(:install) do
         bin.install "agentd"
@@ -18,7 +18,7 @@ class MimiRemote < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.2.0/mimi-remote_0.2.0_darwin_arm64.tar.gz"
-      sha256 "7110e4a99b0f60b0f951d8409866667ba84d1d1e613a2baae0f60fb600c84e7e"
+      sha256 "2024f82ebf2b57fa1117c340cff244765a7edb5756abec9ec1b12af1b50519b1"
 
       define_method(:install) do
         bin.install "agentd"
@@ -29,14 +29,14 @@ class MimiRemote < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.2.0/mimi-remote_0.2.0_linux_amd64.tar.gz"
-      sha256 "61ff0179c8f0fc7764fe43810f1a639f097c320853c4d290d915bcbafad10f3a"
+      sha256 "68055a3c81620244885895d1fd320df37f5e3c1c0a116c223307bd3a67e852df"
       define_method(:install) do
         bin.install "agentd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gaixianggeng/mimi-remote/releases/download/v0.2.0/mimi-remote_0.2.0_linux_arm64.tar.gz"
-      sha256 "ee91fdacf51e8c5727481548e48edb808b635efcd6c07e4a8c17b7f672efbfa2"
+      sha256 "e36a615976721cbfbbc6c5630f09dd05281e6368b845e99dc6f24e9328639d23"
       define_method(:install) do
         bin.install "agentd"
       end
