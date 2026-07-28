@@ -5,20 +5,20 @@
 class MimiRemote < Formula
   desc "iPad companion agent for user-owned Mac developer environments"
   homepage "https://github.com/gaixianggeng/codex-ipad-agent"
-  version "0.2.7"
+  version "0.2.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.7/mimi-remote_0.2.7_darwin_amd64.tar.gz"
-      sha256 "cb55e4d1603838bcdf481a20f2b438cc11199efe92bacd42bfdcfdd9d2b1273a"
+      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.8/mimi-remote_0.2.8_darwin_amd64.tar.gz"
+      sha256 "f2f87105aa24bd75b2992f391d2031e6b2ba22f1b8e28371427b8aa7366b0418"
 
       define_method(:install) do
         bin.install "agentd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.7/mimi-remote_0.2.7_darwin_arm64.tar.gz"
-      sha256 "5588b77a1fdd9b86b05f11f71f7455b8e2bba9043bdf8254818d23f82bc9acca"
+      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.8/mimi-remote_0.2.8_darwin_arm64.tar.gz"
+      sha256 "c9a62677ba70862ab31df006ce4a662afc59745be2346f758d841d9c916a8feb"
 
       define_method(:install) do
         bin.install "agentd"
@@ -28,15 +28,15 @@ class MimiRemote < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.7/mimi-remote_0.2.7_linux_amd64.tar.gz"
-      sha256 "e5579ba5a17c78bafe48f55f8f4c3732b259a305f50152d621753fc488165a83"
+      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.8/mimi-remote_0.2.8_linux_amd64.tar.gz"
+      sha256 "7f30868f46b05b8fba3e81d37040522e05d055c41799250af245b410b0c473de"
       define_method(:install) do
         bin.install "agentd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.7/mimi-remote_0.2.7_linux_arm64.tar.gz"
-      sha256 "831fb764169b0f25805e639aea8f58911c1813ca0677628067626479c39b4064"
+      url "https://github.com/gaixianggeng/codex-ipad-agent/releases/download/v0.2.8/mimi-remote_0.2.8_linux_arm64.tar.gz"
+      sha256 "b31ae23fdaf84785f67e279b173f9313b1cd6668c3777a34106236305cc00575"
       define_method(:install) do
         bin.install "agentd"
       end
